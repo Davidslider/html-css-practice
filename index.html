@@ -9,7 +9,7 @@
             <h1>David's Resume</h1>
             <img src="" alt="David Profile Picture">
         </header>
-        <section>
+        <section id="bio">
             <h3>My Bio</h3>
             <article>>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corrupti quasi minus, consectetur molestiae ratione ex iste accusantium hic quam obcaecati vero. Incidunt molestiae inventore illum asperiores aliquam quia veritatis?</p>
@@ -30,13 +30,19 @@
             </ul>
             </article>
         </section>
+      
         <footer>
-            <p>All Rights Reserved David Scott 2019</p>
+            <p>All Rights Reserved David Slider <span id="year"></span></p>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/david-slider-5ab90b179/">Linkdin</a>
                 </li>
             </ul>
+            <script>
+                    const year = new Date().getFullYear()
+                    const element = document.getElementById('year')
+                    element.innerHTML = year
+            </script>
         </footer>
     </body>
 
